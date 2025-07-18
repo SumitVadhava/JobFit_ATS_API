@@ -5,3 +5,5 @@ fastapi
 uvicorn
 PyPDF2
 groq
+re
+python-multipart
