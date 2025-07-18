@@ -1,0 +1,6 @@
+streamlit
+pythondotenv
+pdf2image
+fastapi
+uvicorn
+PyPDF2
