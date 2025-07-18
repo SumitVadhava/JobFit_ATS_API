@@ -1,5 +1,5 @@
 streamlit
-pythondotenv
+python-dotenv
 pdf2image
 fastapi
 uvicorn
