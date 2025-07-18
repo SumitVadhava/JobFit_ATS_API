@@ -132,6 +132,9 @@ def parse_ai_response(response_text):
     }
 
 # Root Endpoint
+@app.get("/ping")
+async def ping():
+    return JSONResponse(content={"message": "pong", "status": "API is live ✅"}, status_code=200)
 @app.get("/")
 async def read_root():
     return {"message": "ATS API running 🚀..."}
