@@ -4,6 +4,7 @@ from fastapi import FastAPI, UploadFile, Form, File
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from groq import Groq
+from dotenv import load_dotenv
 
 app = FastAPI()
 
@@ -16,7 +17,8 @@ app.add_middleware(
 )
 
 # Groq Client Setup
-groq_client = Groq(api_key="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")
+groq_api_key = os.getenv("GROQ_API_KEY")")
+groq_client = Groq(api_key=groq_api_key)
 model_name = "moonshotai/kimi-k2-instruct"
 
 # PDF Text Extraction
