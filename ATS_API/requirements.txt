@@ -6,4 +6,3 @@ uvicorn
 PyPDF2
 groq
 python-multipart
-os
