@@ -20,7 +20,7 @@ app.add_middleware(
 # Groq Client Setup
 groq_api_key = os.getenv("GROQ_API_KEY")
 groq_client = Groq(api_key=groq_api_key)
-model_name = "moonshotai/kimi-k2-instruct"
+model_name = "qwen/qwen3-32b"
 
 # PDF Text Extraction
 def extract_text_from_pdf(file):
